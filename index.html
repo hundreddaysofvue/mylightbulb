@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <title>My Light Bulb | By Ch1nux Par1bus</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans"rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section id="app">
+    <div class="content">
+      <img src="mylightbulb-logo.svg" alt="My Light Bulb"/>
+      <h2>My Light Bulb</h2>
+      <p>Choose your shadow of white and get a brighter life!!!</p>
+      <div class="grid-container">
+        <span v-for="color in backdrops" :style="{ backgroundColor: color }"
+          @click="changeBackground(color)"></span>
+        <span class="power-button" @click="changeBackground('#000')"> <img src="turn-off.svg" alt="Turn off" class="turn-off"/> </span>
+      </div>
+    </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="lightbulb.js"></script>
+  </body>
+</html>
