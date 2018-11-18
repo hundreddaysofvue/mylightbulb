@@ -57,7 +57,7 @@ span {
 
 @media (max-width: 60rem) {
   section {
-    height: 200vh;
+    height: 350vh;
   }
 
   .grid-container {
