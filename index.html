@@ -11,13 +11,29 @@
   <body>
     <section id="app">
     <div class="content">
-      <img src="mylightbulb-logo.svg" alt="My Light Bulb"/>
+      <img
+        src="mylightbulb-logo.svg"
+        alt="My Light Bulb"
+      >
       <h2>My Light Bulb</h2>
       <p>Choose your shadow of white and get a brighter life!!!</p>
       <div class="grid-container">
-        <span v-for="color in backdrops" :style="{ backgroundColor: color }"
-          @click="changeBackground(color)"></span>
-        <span class="power-button" @click="changeBackground('#000')"> <img src="turn-off.svg" alt="Turn off" class="turn-off"/> </span>
+        <span
+          v-for="color in backdrops"
+          :style="{ backgroundColor: color }"
+          @click="changeBackground(color)"
+        >
+        </span>
+        <span
+          class="power-button"
+          @click="changeBackground('#000')"
+        >
+          <img
+            src="turn-off.svg"
+            alt="Turn off"
+            class="turn-off"
+          >
+        </span>
       </div>
     </div>
     </section>
